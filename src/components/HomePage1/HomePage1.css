@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* ===== Hero Section ===== */
+.hero1 {
+    margin-top: 2.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.hero1-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero1-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero1-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hero1-btn {
+  padding: 12px 30px;
+  background: #ff9800;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.hero1-btn:hover {
+  background: #e68900;
+}
+
+.hero1-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero1-image img {
+  max-width: 420px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Trending Products ===== */
+.trending {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.trending h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.product1-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.product1-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.product1-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product1-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.product1-card p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #667eea;
+}
+
+.product1-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Deal of the Day ===== */
+.deal {
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  color: #fff;
+  text-align: center;
+  padding: 60px 10%;
+}
+
+.deal-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+.deal-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.deal-btn {
+  background: #fff;
+  color: #ff512f;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.deal-btn:hover {
+  background: #f5f5f5;
+}
+
+/* ===== Categories ===== */
+.categories {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.category-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #444;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  background: #667eea;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* ===== Newsletter ===== */
+.newsletter1 {
+  background: #f1f1f1;
+  text-align: center;
+  padding: 60px 10%;
+}
+
+.newsletter1 h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.newsletter1 p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.newsletter1-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.newsletter1-form input {
+  padding: 12px;
+  width: 280px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.newsletter1-form button {
+  padding: 12px 25px;
+  background: #667eea;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.newsletter1-form button:hover {
+  background: #4a5edb;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .hero1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero1-image {
+    margin-top: 20px;
+  }
+}
